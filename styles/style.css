@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Spectral:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-size:  auto;
+    flex-wrap: wrap;
+}
+/* é o menu de navegação  */
+#menu{
+    display: flex;
+    list-style: none;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+/* os textos do menu */
+#menu p {
+    display: block;
+    padding: 0.5rem;
+    margin: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+    /* border: 2px solid gray; */
+    border-radius: 13px;
+}
+/* serviçossão os p */
+.servicos{
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+#menu p:hover{
+  color: #f0b6a6;
+}
+
+/* #menu a:hover{
+    transition: 2000ms;
+    background-color: gray;
+} */
+  /* faz o botão ficar invisivel */
+#btn-mobile {
+  display: none;
+}
+/* cabeçalho é a barra inteira do menu */
+#cabecalho{
+    background-color: #0D0D0D;
+    display: flex;
+    position: relative;
+    list-style: none;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+#Logo{
+    font-family: 'Dancing Script', cursive;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+#Logo:hover{
+  transition: 3000ms;
+  color: #92c6c2;
+}
+
+#textoPrincipal {
+    position: relative;
+    font-size: 1.3rem;
+    color: white;
+    border: 2px solid white;
+    background-color: #92c6c2;
+    border-radius: 50px;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 20px;
+}
+/* é a imagem */
+#vila{
+    border-radius: 20px 0px 20px 20px;
+}
+/* texto responsivo da imagem */
+.container-fluid{
+  color: white;
+  align-items: center;
+    background-color:  #93b7b3;
+    /* border-radius: 30px; */
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+/* texto das informações importantes */
+#info{
+  margin-top: 30px;
+  text-align: center;
+}
+/* informações importantes */
+.InfoImportantes{
+  margin-top: 30px;
+  justify-content: space-around;
+  text-align: center;
+  display: flex;
+  height: 100pxpx;
+ 
+}
+/* informações importantes cor */
+#cor{
+  background: #92c6c2;
+  height: max-content;
+}
+/* items das informações importantes */
+#hora{
+  font-size: 1.3rem;
+  padding-top: 80px;
+  width: 250px;
+}
+#hora i{
+  font-size: 3rem;
+}
+#bagagem{
+  font-size: 1.3rem;
+  padding-top: 80px;
+  width: 250px;
+}
+#bagagem i{
+  font-size: 3rem;
+}
+#passaporte{
+  font-size: 1.3rem;
+  padding-top: 80px;
+  width: 250px;
+}
+#passaporte i{
+  font-size: 3rem;
+}
+#local{
+  font-size: 1.3rem;
+  padding-top: 80px ;
+  width: 250px;
+}
+#local i{
+  font-size: 3rem;
+}
+.zoom {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+	overflow: hidden;
+  width: max-content;
+}
+/* .zoom faz o zoom */
+.zoom .aprox{
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.zoom:hover .aprox{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#Dinamarca, #alaska{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: 135px;
+  align-items: center;
+  list-style: none;
+  border: 2px solid black;
+}
+.viagens{
+  /* margin-top: 30px; */
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.textoDestino{
+  text-align: center;
+}
+@media (max-width: 600px) {
+    #imagem-fundo{
+    background-size: cover;
+    }
+    #btn-mobile {
+      display: block;
+    }
+  
+    #header {
+      display: flex;
+      /* text-align: left; */
+      background-color: #1c1c1cc2;
+    }
+  
+    #menu {
+      /* display: none; */
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background-color: #1c1c1cc2;
+      height: 0px;
+      transition: 0.6s;
+      z-index: 10000;
+      visibility: hidden;
+      overflow-y: hidden;
+      left: 0px;
+    }
+  
+    #nav.active #menu {
+      /* display: block; */
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+  
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid #ffffff;
+    }
+  
+    /* estilo do botão */
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: white;
+    }
+  
+    /* cria o primeiro pedaço */
+    #hamburguer {
+      margin-left: 0.7rem;
+      width: 20px;
+      border-top: 2px solid;
+      display: block;
+      color: #ffffff;
+    }
+  
+    /* cria os outros dois pedaços do hamburguer */
+    #hamburguer::after,
+    #hamburguer::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin-top: 5px;
+      background-color: currentColor;
+      transition: 0.3s;
+      position: relative;
+    }
+  
+    /* faz a parte de cima do hamburguer desaparecer */
+    #nav.active #hamburguer {
+      border-top-color: transparent;
+    }
+  
+    /* as partes a seguir fazem a rotação do hamburguer */
+    #nav.active #hamburguer::before {
+      transform: rotate(135deg);
+    }
+  
+    #nav.active #hamburguer::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    #divLista{
+      flex-direction: column;
+      align-items: center;
+    }
+    .listaImg{
+      margin: 0px;
+    }
+    #margem , #margemProj{
+      width: 100%;
+      position: relative;
+    }
+    .container-fluid img{
+    align-items: flex-end;
+
+  }
+  .InfoImportantes{
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* margin-top: 30%; */
+  }
+  .viagens{
+    flex-direction: column;
+  }
+  
+  }
+@media (max-width: 800px) {
+  .container-fluid{
+    flex-direction: column;
+  }  
+  #vila{ 
+    width: 100%;
+    height: 100%;
+}
+  
+}
+@media (max-width: 500px){
+}
