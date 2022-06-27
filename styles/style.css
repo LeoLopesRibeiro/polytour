@@ -161,7 +161,8 @@ body{
 }
 /* .zoom faz o zoom */
 .zoom .aprox{
-	max-width: 100%;
+	/* max-width: 100%; */
+  width: min-content;
 	-moz-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
@@ -171,7 +172,7 @@ body{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
-#Dinamarca, #alaska{
+#Dinamarca, #alaska, #chile, #africa, #japao{
   display: flex;
   flex-direction: column;
   width: max-content;
@@ -181,15 +182,14 @@ body{
   border: 2px solid black;
 }
 .viagens{
-  /* margin-top: 30px; */
-  text-align: center;
   display: flex;
   justify-content: space-between;
+  /* width: min-content; */
 }
 .textoDestino{
   text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 670px) {
     #imagem-fundo{
     background-size: cover;
     }
@@ -204,9 +204,11 @@ body{
     }
   
     #menu {
+
       /* display: none; */
       display: block;
       position: absolute;
+      text-align: center;
       width: 100%;
       top: 70px;
       right: 0px;
@@ -226,7 +228,7 @@ body{
       overflow-y: auto;
     }
   
-    #menu a {
+    #menu p {
       padding: 1rem 0;
       margin: 0 1rem;
       border-bottom: 2px solid #ffffff;
@@ -279,17 +281,6 @@ body{
       transform: rotate(-135deg);
       top: -7px;
     }
-    #divLista{
-      flex-direction: column;
-      align-items: center;
-    }
-    .listaImg{
-      margin: 0px;
-    }
-    #margem , #margemProj{
-      width: 100%;
-      position: relative;
-    }
     .container-fluid img{
     align-items: flex-end;
 
@@ -303,8 +294,8 @@ body{
   }
   .viagens{
     flex-direction: column;
-  }
-  
+    align-items: center;
+    width: 600px;
   }
 @media (max-width: 800px) {
   .container-fluid{
@@ -314,7 +305,7 @@ body{
     width: 100%;
     height: 100%;
 }
-  
+}
 }
 @media (max-width: 500px){
 }
