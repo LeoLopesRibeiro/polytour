@@ -9,6 +9,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-size:  auto;
     flex-wrap: wrap;
+    text-align: center;
 }
 /* é o menu de navegação  */
 #menu{
@@ -107,12 +108,10 @@ body{
 }
 /* informações importantes */
 .InfoImportantes{
-  margin-top: 30px;
   justify-content: space-around;
   text-align: center;
   display: flex;
-  height: 100pxpx;
- 
+  height: 250px;
 }
 /* informações importantes cor */
 #cor{
@@ -152,7 +151,7 @@ body{
 #local i{
   font-size: 3rem;
 }
-.zoom {
+.zoom{
   display: flex;
   align-items: center;
   padding: 10px;
@@ -188,6 +187,46 @@ body{
 }
 .textoDestino{
   text-align: center;
+}
+.info{
+  margin-top: 50px;
+}
+.ofertas{
+  margin: 30px;
+  justify-content:space-between;
+  display: flex;
+}
+.beneficios{
+  width: 200px;
+  justify-content: space-between;
+  font-size: 1.0rem;
+  text-align: center;
+  border: 2px solid black;
+  padding: 50px;
+  border-radius: 30px;
+  color: #000000;
+  background-color: #92c6c28e;
+}
+.titulos-plano{
+  margin-bottom: 20px;
+}
+#bronze:hover{
+  transition: 2000ms;
+  background-color: #8C7853;
+}
+#prata:hover{
+  transition: 2000ms;
+  background-color: #d5d5d5 ;
+}
+#ouro:hover{
+  transition: 2000ms;
+  background-color: #ffd700;
+}
+footer{
+  border-top: 2px solid black;
+}
+footer i{
+  font-size: 1.5rem;
 }
 @media (max-width: 670px) {
     #imagem-fundo{
@@ -295,9 +334,15 @@ body{
   .viagens{
     flex-direction: column;
     align-items: center;
-    width: 600px;
+    /* width: 600px; */
   }
-@media (max-width: 800px) {
+  .direita{
+    align-items: flex-end;
+  }
+  .ofertas{
+    flex-direction: column;
+    align-items: center;
+  }
   .container-fluid{
     flex-direction: column;
   }  
@@ -305,7 +350,18 @@ body{
     width: 100%;
     height: 100%;
 }
+.beneficios{
+  margin-bottom: 20px;
+  width: 300px;
+}
+@media (max-width: 800px) {
+.InfoImportantes{
+  height: max-content;
 }
 }
-@media (max-width: 500px){
+}
+@media (max-width: 300px){
+  .beneficios{
+    width: auto;
+  }
 }
