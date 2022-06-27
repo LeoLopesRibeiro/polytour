@@ -351,7 +351,6 @@ footer i{
     height: 100%;
 }
 .beneficios{
-  margin-bottom: 20px;
   width: 300px;
 }
 @media (max-width: 800px) {
@@ -362,6 +361,6 @@ footer i{
 }
 @media (max-width: 300px){
   .beneficios{
-    width: auto;
+    width: ;
   }
 }
