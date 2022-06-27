@@ -361,6 +361,6 @@ footer i{
 }
 @media (max-width: 300px){
   .beneficios{
-    width: ;
+    width: auto;
   }
 }
